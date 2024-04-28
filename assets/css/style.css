@@ -1,0 +1,330 @@
+/* Variables */
+:root {
+    --white : #FFF;
+    --black : #000;
+    --lightish : #eae2b7;
+    --blackish: #000;
+    --gold: #f7a01e;
+}
+
+/* Typhography */
+
+h3,h4,h5,h6 {
+    color: var(--white) !important; 
+}
+
+h2{
+    color: var(--black) !important;
+}
+
+
+/* Wrapper */
+
+.wrapper {
+    min-height: 100vh;
+    margin-top: 0rem;
+}
+
+
+
+/* Navbar */
+.navbar {
+    /*background-color: var(--lightish) !important;*/
+    background-color: var(--blackish); 
+}
+
+.navbar li .nav-link {
+    padding-left: 1.22rem !important;
+    padding-right: 1.22rem !important;
+    color: var(--white); 
+}
+
+.navbar li .nav-link.active {
+    border-radius: 2px;
+    /*border: 1px solid var(--white); */
+}
+
+
+
+
+
+
+/* Home Banner */
+
+.hero-section .carousel-inner .carousel-item img {
+    height: 550px;
+    object-fit: cover;
+    
+}
+
+.hero-section .carousel-inner .carousel-item .carousel-caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0;
+
+
+}
+
+.hero-section .carousel-inner .carousel-item .carousel-caption .caption h1 {
+    font-size: 5em;
+
+}
+/* Grid Img Section */
+
+.grid-bg{
+    background-color: #cd6f6f;
+    /*background-color: #cd6f6f; */
+    margin-top: 0%; 
+    height: 100%;
+}
+
+.hero-container-main{
+    width: 100%;
+    height: 100%;
+}
+
+.quotation-container{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.quotation-container {
+    position: relative;
+    width: auto;
+    height: 400px; /* Adjust this if necessary */
+    overflow: hidden;
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.image-file{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.video-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the container while maintaining aspect ratio */
+}
+
+
+.grid-img-section img{
+    border-radius: 10px;
+    transition: all 1s;
+     /*border: 1px solid var(--lightish); */
+    background-color: #000;
+    margin-bottom: 0rem;
+    object-fit: contain;
+}
+
+
+.grid-img-section img:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+    border: 1px solid var(--lightish) !important;
+
+}
+
+/* Others */
+.obj-fit {
+    object-fit: cover;
+}
+
+/* Testimonials Section */
+
+.owl-carousel {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.owl-nav {
+    left: -30px;
+    width: 105%;
+    display: flex !important;
+    position: absolute !important;
+    justify-content: space-between !important;
+}
+
+.owl-nav button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--bla) !important;
+}
+
+.owl-nav button span {
+    font-size: 2em;
+}
+
+.owl-carousel .owl-dots {
+    display: none !important;
+}
+
+/* Testimonail Card */
+
+.owl-carousel .owl-stage-outer .owl-item .testimonial-card {
+    min-height: 250px;
+    padding: 1.22rem 1.22rem;
+    border-radius: 10px;
+    border: 1px solid var(--lightish) !important;
+    background-color: var(--white);
+}
+
+.owl-carousel .testimonial-card img {
+    border-radius: 6px;
+}
+
+/* Gallery Section */
+
+.gallery-section img {
+    border-radius: 6px;
+}
+
+/* Footer */
+
+footer.footer {
+    color: var(--white);
+    border-radius: 26px;
+    background-color: var(--black);
+}
+
+footer.footer h3,
+footer.footer h4 {
+    color: var(--lightish);
+}
+
+footer.footer h4 {
+    text-align: start;
+    margin-left: 1rem;
+    padding-left: 0 !important;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--white);
+}
+
+footer.footer .nav li a {
+    font-size: 14.55px;
+    color: var(--lightish);
+    letter-spacing: .55px;
+}
+
+footer.footer .nav li a:hover {
+    color: var(--lightish);
+}
+
+footer.footer .social-links a {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: var(--black);
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    text-decoration: none;
+    border: 1px solid var(--lightish);
+}
+
+footer.footer .social-links a:hover {
+    color: var(--white);
+    background-color: var(--lightish);
+}
+
+footer textarea {
+
+    resize: none;
+    height: 80px !important;
+}
+
+footer textarea ,
+footer input {
+    border: 1px solid #fffded !important;
+    background-color: #fffded !important;
+}
+
+/* Mobile Device */
+
+@media(max-width: 440px) {
+
+    .navbar .navbar-nav {
+        margin-top: 1.66rem !important;
+    }
+
+    .navbar .navbar-nav li .nav-link {
+        display: inline-block !important;
+    }
+
+    .hero-section .carousel-inner .carousel-item img {
+        height: 300px;
+    }
+
+    .hero-section .caption {
+        max-width: 300px !important;
+    }
+
+    .hero-section .carousel-inner .carousel-item h1 {
+        font-size: 2em !important;
+    }
+
+    .grid-img-section {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .grid-img-section .col-md-12.my-4 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .grid-img-section img {
+        margin-bottom: 1rem;
+        object-fit: cover !important;
+        height: 250px !important;
+        width: 100% !important;
+    }
+
+    .grid-img-section .col-md-3 {
+        display: block !important;
+    }
+
+    .testimonials-section .testimonial-card img {
+        height: 245px;
+        margin-bottom: 3rem;
+    }
+
+    .owl-nav {
+        left: -9px;
+        width: 105%;
+    }
+
+}
+
+body{
+    scroll-behavior: smooth;
+}
